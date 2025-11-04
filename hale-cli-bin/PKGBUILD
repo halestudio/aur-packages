@@ -1,6 +1,6 @@
 # Maintainer: Simon Templer <st at wetransform dot to>
 pkgname=hale-cli-bin
-pkgver=6.1.4 # renovate: datasource=github-tags depName=halestudio/hale-cli
+pkgver=6.1.5 # renovate: datasource=github-tags depName=halestudio/hale-cli
 pkgrel=1
 pkgdesc="Command-line interface for hale studio (binary package)"
 arch=('any')
