@@ -11,7 +11,7 @@ provides=('hale-studio')
 conflicts=('hale-studio')
 source=("hale-studio-${pkgver}.tar.gz::https://github.com/halestudio/hale/releases/download/v${pkgver}/hale-studio-${pkgver}-linux.gtk.x86_64.tar.gz"
         )
-sha256sums=('b508111c5eea3e7b174dc794bc3c4e98be00fd68a0c7f7bc5a62ab2321e04fe9')
+sha256sums=('e1aca28e24bec822d0751c684066aed8d9e22f4fca50b6b38af46743fccea2dc')
 
 package() {
     install -d "$pkgdir/opt/hale-studio"
