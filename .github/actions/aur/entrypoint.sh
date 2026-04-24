@@ -27,8 +27,13 @@ git diff PKGBUILD
 echo "::endgroup::"
 
 echo "::group::Installing depends"
+declare -a depends=() makedepends=()
+# shellcheck disable=SC1091
 source PKGBUILD
-sudo pacman -S --needed --noconfirm "${depends[@]}" "${makedepends[@]}"
+all_deps=("${depends[@]}" "${makedepends[@]}")
+if [ "${#all_deps[@]}" -gt 0 ]; then
+    sudo pacman -S --needed --noconfirm "${all_deps[@]}"
+fi
 echo "::endgroup::"
 
 echo "::group::Running makepkg"
