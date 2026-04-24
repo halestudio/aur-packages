@@ -35,6 +35,12 @@ updpkgsums
 ```
 This will update the `sha256sums` array in your PKGBUILD in place.
 
+To reproduce exactly what the `updpkgsums` GitHub Action does (useful when the workflow fails on a PR and you want to investigate locally), run the Docker-based action in a container on any host:
+```sh
+scripts/updpkgsums-local.sh hale-studio-bin
+```
+Requires Docker. Builds `.github/actions/aur/Dockerfile` and runs its entrypoint against the given package directory, writing updated `PKGBUILD` / `.SRCINFO` back into the worktree.
+
 Alternatively, to generate checksums manually:
 ```sh
 makepkg -g
