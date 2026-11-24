@@ -10,7 +10,7 @@ depends=('java-runtime')
 provides=('hale-cli')
 conflicts=('hale-cli' 'hale')
 source=("hale-cli_${pkgver}_all.deb::https://github.com/halestudio/hale-cli/releases/download/v${pkgver}/hale-cli_${pkgver}_all.deb")
-sha256sums=('caa13b414302f07cf5a21d1cacc60f7e3c7682bddeb03c6962dacfb0ad74214d')
+sha256sums=('ca4935353b067095f9d84edab70593c5f9b30d1356d01a7080ab007e456323af')
 
 package() {
 	bsdtar -xf "${srcdir}/hale-cli_${pkgver}_all.deb" -C "$srcdir"
