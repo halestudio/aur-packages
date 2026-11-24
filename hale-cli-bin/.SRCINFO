@@ -1,6 +1,6 @@
 pkgbase = hale-cli-bin
 	pkgdesc = Command-line interface for hale studio (binary package)
-	pkgver = 6.3.2
+	pkgver = 7.0.0
 	pkgrel = 1
 	url = https://github.com/halestudio/hale-cli
 	arch = any
@@ -9,7 +9,7 @@ pkgbase = hale-cli-bin
 	provides = hale-cli
 	conflicts = hale-cli
 	conflicts = hale
-	source = hale-cli_6.3.2_all.deb::https://github.com/halestudio/hale-cli/releases/download/v6.3.2/hale-cli_6.3.2_all.deb
-	sha256sums = caa13b414302f07cf5a21d1cacc60f7e3c7682bddeb03c6962dacfb0ad74214d
+	source = hale-cli_7.0.0_all.deb::https://github.com/halestudio/hale-cli/releases/download/v7.0.0/hale-cli_7.0.0_all.deb
+	sha256sums = ca4935353b067095f9d84edab70593c5f9b30d1356d01a7080ab007e456323af
 
 pkgname = hale-cli-bin
